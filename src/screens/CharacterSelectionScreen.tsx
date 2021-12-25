@@ -8,15 +8,6 @@ import { useIsFocused } from '@react-navigation/native';
 
 const CharacterSelectionScreen = ( ) => {
 
-  const isFocused = useIsFocused();
-
-  if (isFocused){
-    console.log('El CharacterSelectionScreen esta activo')
-  }
-  else {
-    console.log('El CharacterSelectionScreen esta inactivo')
-  }
-
   const { isLoading, simplePokemon, loadNextPokemon, loadPreviousPokemon } = usePokemonSelector()
 
   return (

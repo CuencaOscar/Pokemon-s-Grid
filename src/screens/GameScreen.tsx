@@ -17,14 +17,6 @@ interface Props extends StackScreenProps<RootStackParams, 'GameScreen'> { }
 
 const GameScreen = ({ navigation, route }: Props) => {
 
-  const isFocused = useIsFocused();
-
-  if (isFocused) {
-    console.log('El GameScreen esta activo')
-  }
-  else {
-    console.log('El GameScreen esta inactivo')
-  }
 
   const { name, picture, id } = route.params.simplePokemon
 

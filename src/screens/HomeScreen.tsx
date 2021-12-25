@@ -4,14 +4,15 @@ import { ImageBackground, StyleSheet, Text, TouchableOpacity, useWindowDimension
 import CardPortada from '../components/CardPortada';
 import { useIsFocused } from '@react-navigation/native';
 import Sound from 'react-native-sound'
+import {
+  hideNavigationBar,
+} from 'react-native-navigation-bar-color';
 
 interface Props extends StackScreenProps<any, any> { }
 
 const HomeScreen = ({ navigation }: Props) => {
 
-  // let portada = new Sound('portada.mp3')
-
-  const isFocused = useIsFocused();
+  hideNavigationBar();
 
   const { width, height } = useWindowDimensions()
 
@@ -30,7 +31,7 @@ const HomeScreen = ({ navigation }: Props) => {
   const orientacionVertical = () => {
     return (
       <ImageBackground
-        resizeMode='stretch'
+        resizeMode='cover'
         style={styles.imageBackground}
         source={require('../assets/PokemonPortada2.jpg')}
       >
@@ -40,9 +41,9 @@ const HomeScreen = ({ navigation }: Props) => {
   }
 
   return (
-    <>
+    <View style={{width: width, height: '100%'}}>
       {(width > 600) ? orientacionHorizontal() : orientacionVertical()}
-    </>
+    </View>
   )
 }
 

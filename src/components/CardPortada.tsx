@@ -12,13 +12,7 @@ interface Props {
 
 const CardPortada = ({ navigation, width, height }: Props) => {
 
-  // const { width, height } = useWindowDimensions()
-
   let portada = new Sound('portada.mp3')
-
-  const [onOff, setOnOff] = useState(true)
-
-  console.log(portada.isPlaying())
 
   useEffect(() => {
     return () => {
@@ -29,7 +23,7 @@ const CardPortada = ({ navigation, width, height }: Props) => {
   return (
     <View style={{ ...styles.containerGeneral, width: width * 0.35, height: height * 0.85 }}>
       <View style={styles.container} />
-      <TextPortada text={"Mario's"} />
+      <TextPortada text={"Pokemons's"} />
       <TextPortada text={"Grid"} />
       <ButtonPortada text={'High Scores'} />
       <ButtonPortada text={'Music'} onPress={() =>  (!portada.isPlaying()) ? (portada.setNumberOfLoops(-1), portada.setCurrentTime(5), portada.play()) : portada.stop() } />
@@ -48,7 +42,7 @@ const styles = StyleSheet.create({
     borderRadius: 25,
   },
   container: {
-    opacity: 0.2,
+    opacity: 0.4,
     backgroundColor: 'white',
     width: '100%',
     height: '100%',
