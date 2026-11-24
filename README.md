@@ -4,7 +4,7 @@ A grid exploration game inspired by the classic *Hunt the Wumpus*, themed with P
 [PokéAPI](https://pokeapi.co/). Built with **React Native** and **TypeScript**; playable in portrait and
 landscape.
 
-![React Native](https://img.shields.io/badge/React_Native-0.66-61DAFB?logo=react&logoColor=black)
+![React Native](https://img.shields.io/badge/React_Native_0.66-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
 <p align="center">
