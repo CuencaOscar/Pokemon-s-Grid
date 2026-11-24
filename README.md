@@ -7,11 +7,9 @@ landscape.
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
-<p align="center">
-  <img src="src/assets/HomeScreen.jpeg" alt="Home screen" width="240">
-  <img src="src/assets/CharacterSelectionScreen.jpeg" alt="Character selection" width="240">
-  <img src="src/assets/GameScreen.jpeg" alt="Game screen" width="240">
-</p>
+<p align="center"><img src="docs/screens.png" alt="Home and character selection screens" width="620"></p>
+
+<p align="center"><img src="docs/gameplay.png" alt="Gameplay in landscape" width="820"></p>
 
 ## Features
 
