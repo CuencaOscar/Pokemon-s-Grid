@@ -4,6 +4,8 @@ import usePokemonSelector from '../hooks/usePokemonSelector';
 import ButtonCharacterSelectionScreen from './ButtonCharacterSelectionScreen';
 import { SimplePokemon } from '../interfaces/pokemonInterfaces';
 import { useNavigation } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RootStackParams } from '../navigator/Navigator';
 
 interface Props {
   simplePokemon: SimplePokemon[],
@@ -13,7 +15,7 @@ const CardCharacterSelectionScreen = ({ simplePokemon }: Props) => {
 
   const { width, height } = useWindowDimensions()
 
-  const navigation = useNavigation()
+  const navigation = useNavigation<StackNavigationProp<RootStackParams>>()
 
   const orientacionHorizontal = () => {
     return (
