@@ -40,8 +40,8 @@ src/
 └── screens/       # Home, character selection, game
 ```
 
----
+## License
 
-Pokémon and Pokémon character names are trademarks of Nintendo; this is a non-commercial learning project.
+Pokémon names, sprites and artwork belong to Nintendo / The Pokémon Company and are not covered by this license.
 
-**Oscar Cuenca** · [LinkedIn](https://www.linkedin.com/in/ocuenca-moreno/)
+[MIT](LICENSE) © Oscar Cuenca · [LinkedIn](https://www.linkedin.com/in/ocuenca-moreno/)
