@@ -15,7 +15,7 @@ export const ImagePlayerGameScreen = ({ picture }: Props) => {
 
   return (
     <Image
-      style={{ ...styles.image, width: (width > 600) ? widthBigSquare : width*0.5, height: (width > 600) ? heightBigSquare : height*0.25 }}
+      style={{ ...styles.image, width: (width > 600) ? widthBigSquare : width*0.5, height: (width > 600) ? heightBigSquare : height * 0.2 }}
       source={{ uri: picture }}
     />
   )

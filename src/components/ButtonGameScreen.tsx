@@ -22,18 +22,18 @@ const ButtonGameScreen = ({ TurnRight, TurnLeft, TurnUp, TurnDown }: Props) => {
   const widthSmallSquare = heightBigSquare * 0.35
 
   return (
-    <View style={{ width: (width > 600) ? widthBigSquare : width * 0.5, height: (width > 600) ? heightBigSquare : height * 0.25 }}>
+    <View style={{ width: (width > 600) ? widthBigSquare : width * 0.5, height: (width > 600) ? heightBigSquare : height * 0.2 }}>
       <View style={styles.container}>
-        <TouchableOpacity style={{ ...styles.squares, height: (width > 600) ? heightSmallSquare : height * 0.25*0.35, width: (width > 600) ? heightSmallSquare : height * 0.25*0.35, top: 0, left: (width > 600) ? 0.5 * widthBigSquare - 0.5 * widthSmallSquare : 0.5*width * 0.5 - 0.5*height * 0.25*0.35 }} onPress={TurnUp}>
+        <TouchableOpacity style={{ ...styles.squares, height: (width > 600) ? heightSmallSquare : height * 0.2 * 0.35, width: (width > 600) ? heightSmallSquare : height * 0.2 * 0.35, top: 0, left: (width > 600) ? 0.5 * widthBigSquare - 0.5 * widthSmallSquare : 0.5*width * 0.5 - 0.5*height * 0.2 * 0.35 }} onPress={TurnUp}>
           <Icon name='arrow-up' size={45} color="black" />
         </TouchableOpacity>
-        <TouchableOpacity style={{ ...styles.squares, height: (width > 600) ? heightSmallSquare : height * 0.25*0.35, width: (width > 600) ? heightSmallSquare : height * 0.25*0.35, top: (width > 600) ? 0.5 * heightBigSquare - 0.5 * heightSmallSquare : 0.5 * height * 0.25 - 0.5 * height * 0.25*0.35, left: 0 }} onPress={TurnLeft}>
+        <TouchableOpacity style={{ ...styles.squares, height: (width > 600) ? heightSmallSquare : height * 0.2 * 0.35, width: (width > 600) ? heightSmallSquare : height * 0.2 * 0.35, top: (width > 600) ? 0.5 * heightBigSquare - 0.5 * heightSmallSquare : 0.5 * height * 0.2 - 0.5 * height * 0.2 * 0.35, left: 0 }} onPress={TurnLeft}>
           <Icon name='arrow-back' size={45} color="black" />
         </TouchableOpacity>
-        <TouchableOpacity style={{ ...styles.squares, height: (width > 600) ? heightSmallSquare : height * 0.25*0.35, width: (width > 600) ? heightSmallSquare : height * 0.25*0.35, bottom: 0, left: (width > 600) ? 0.5 * widthBigSquare - 0.5 * widthSmallSquare : 0.5 * width * 0.5 - 0.5 * height * 0.25*0.35 }} onPress={TurnDown}>
+        <TouchableOpacity style={{ ...styles.squares, height: (width > 600) ? heightSmallSquare : height * 0.2 * 0.35, width: (width > 600) ? heightSmallSquare : height * 0.2 * 0.35, bottom: 0, left: (width > 600) ? 0.5 * widthBigSquare - 0.5 * widthSmallSquare : 0.5 * width * 0.5 - 0.5 * height * 0.2 * 0.35 }} onPress={TurnDown}>
           <Icon name='arrow-down' size={45} color="black" />
         </TouchableOpacity>
-        <TouchableOpacity style={{ ...styles.squares, height: (width > 600) ? heightSmallSquare : height * 0.25*0.35, width: (width > 600) ? heightSmallSquare : height * 0.25*0.35, top: (width > 600) ? 0.5 * heightBigSquare - 0.5 * heightSmallSquare : 0.5 * height * 0.25 - 0.5 * height * 0.25*0.35, right: 0 }} onPress={TurnRight}>
+        <TouchableOpacity style={{ ...styles.squares, height: (width > 600) ? heightSmallSquare : height * 0.2 * 0.35, width: (width > 600) ? heightSmallSquare : height * 0.2 * 0.35, top: (width > 600) ? 0.5 * heightBigSquare - 0.5 * heightSmallSquare : 0.5 * height * 0.2 - 0.5 * height * 0.2 * 0.35, right: 0 }} onPress={TurnRight}>
           <Icon name='arrow-forward' size={45} color="black" />
         </TouchableOpacity>
       </View>

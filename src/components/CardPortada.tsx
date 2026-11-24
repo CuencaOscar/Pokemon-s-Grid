@@ -23,7 +23,7 @@ const CardPortada = ({ navigation, width, height }: Props) => {
   return (
     <View style={{ ...styles.containerGeneral, width: width * 0.35, height: height * 0.85 }}>
       <View style={styles.container} />
-      <TextPortada text={"Pokemons's"} />
+      <TextPortada text={"Pokémon's"} />
       <TextPortada text={"Grid"} />
       <ButtonPortada text={'High Scores'} />
       <ButtonPortada text={'Music'} onPress={() =>  (!portada.isPlaying()) ? (portada.setNumberOfLoops(-1), portada.setCurrentTime(5), portada.play()) : portada.stop() } />

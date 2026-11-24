@@ -8,9 +8,15 @@ landscape.
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
-<p align="center"><img src="docs/screens.png" alt="Home and character selection screens" width="620"></p>
+**[⬇ Download the Android APK](https://github.com/CuencaOscar/Pokemon-s-Grid/releases/latest)** (v1.0.0)
 
-<p align="center"><img src="docs/gameplay.png" alt="Gameplay in landscape" width="820"></p>
+<p align="center"><img src="docs/demo.gif" alt="Choosing a Pokémon, moving across the hidden grid, catching an Ash and hitting Game Over" width="340"></p>
+
+## How to play
+
+Your Pokémon starts in the top-left corner of a board of hidden cells. Every move costs 10 points and reaching one
+of the six visible Ash cells earns 100. Team Rocket and Poké Balls are hidden: stepping on either ends the game,
+but the cells next to them show a warning, as in *Hunt the Wumpus*. Catch all six Ash to clear the level.
 
 ## Features
 
@@ -19,6 +25,12 @@ landscape.
 - Responsive layout that adapts to portrait and landscape (`useWindowDimensions`).
 - Game logic isolated in custom hooks (`useBoardLogicGameScreen`, `usePokemon`, `usePokemonSelector`).
 - Stack navigation and fade-in image animations.
+
+## Screenshots
+
+<p align="center"><img src="docs/screens.png" alt="Home, character selection and the board in portrait" width="820"></p>
+
+<p align="center"><img src="docs/gameplay.png" alt="Gameplay in landscape" width="820"></p>
 
 ## Getting started
 
