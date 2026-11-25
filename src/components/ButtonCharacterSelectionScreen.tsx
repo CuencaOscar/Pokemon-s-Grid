@@ -1,7 +1,6 @@
-import { useNavigation } from '@react-navigation/native'
-import { StackScreenProps } from '@react-navigation/stack';
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity } from 'react-native'
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface Props {
   text: string,
@@ -11,7 +10,8 @@ interface Props {
 export const ButtonCharacterSelectionScreen = ({ text, onPress }: Props) => {
 
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
+    <TouchableOpacity style={styles.container} onPress={onPress} accessibilityRole="button">
+      <Icon name="play" size={14} color="#111827" />
       <Text style={styles.text}>{text}</Text>
     </TouchableOpacity>
   )
@@ -19,17 +19,22 @@ export const ButtonCharacterSelectionScreen = ({ text, onPress }: Props) => {
 
 const styles = StyleSheet.create({
   container: {
-    borderRadius: 10,
-    marginTop: 10,
+    flexDirection: 'row',
+    alignSelf: 'center',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'red'
+    marginTop: 12,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 999,
+    backgroundColor: '#facc15',
   },
   text: {
-    paddingVertical: 0,
-    paddingHorizontal: 15,
-    color: 'white',
-    fontSize: 15
+    marginLeft: 6,
+    color: '#111827',
+    fontSize: 15,
+    fontWeight: 'bold',
+    letterSpacing: 1,
   }
 })
 

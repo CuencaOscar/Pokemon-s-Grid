@@ -9,39 +9,53 @@ interface Props {
   level: number
 }
 
+const Stat = ({ label, value }: { label: string, value: number }) => (
+  <View style={styles.stat}>
+    <Text style={styles.label} numberOfLines={1}>{label}</Text>
+    <Text style={styles.value}>{value}</Text>
+  </View>
+)
 
-const ScoreGamScreen = ({ picture, name, score, ash, level }: Props) => {
+const ScoreGamScreen = ({ name, score, ash, level }: Props) => {
 
   return (
-    <View style={{ flexDirection: 'row', justifyContent: 'space-around', backgroundColor: 'black' , borderColor: 'white', borderWidth:1 }}>
-      <View style={styles.container}>
-        <Text style={styles.title}>{name.toUpperCase()}</Text>
-        <Text style={styles.subtitle}>{score}</Text>
-      </View>
-      <View style={styles.container}>
-        <Text style={styles.title}>Level</Text>
-        <Text style={styles.subtitle}>{level}</Text>
-      </View>
-      <View style={styles.container}>
-        <Text style={styles.title}>Ash</Text>
-        <Text style={styles.subtitle}>{ash}</Text>
-      </View>
+    <View style={styles.bar}>
+      <Stat label={name.toUpperCase()} value={score} />
+      <Stat label="Level" value={level} />
+      <Stat label="Ash left" value={ash} />
     </View>
-
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    paddingHorizontal: 15,
-    alignItems: 'center'
+  bar: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    backgroundColor: 'black',
   },
-  title: {
+  stat: {
+    flex: 1,
+    marginHorizontal: 4,
+    paddingVertical: 4,
+    borderRadius: 10,
+    alignItems: 'center',
+    backgroundColor: '#111827',
+    borderWidth: 1,
+    borderColor: '#1f2937',
+  },
+  label: {
+    fontSize: 10,
     fontWeight: 'bold',
-    color: 'white'
+    letterSpacing: 1,
+    textTransform: 'uppercase',
+    color: '#94a3b8',
   },
-  subtitle: {
-    color: 'white'
+  value: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: 'white',
   }
 })
 

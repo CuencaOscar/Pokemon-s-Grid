@@ -8,7 +8,7 @@ landscape.
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 
-**[⬇ Download the Android APK](https://github.com/CuencaOscar/Pokemon-s-Grid/releases/latest)** (v1.0.0)
+**[⬇ Download the Android APK](https://github.com/CuencaOscar/Pokemon-s-Grid/releases/latest)** (v1.1.0)
 
 <p align="center"><img src="docs/demo.gif" alt="Choosing a Pokémon, moving across the hidden grid, catching an Ash and hitting Game Over" width="340"></p>
 

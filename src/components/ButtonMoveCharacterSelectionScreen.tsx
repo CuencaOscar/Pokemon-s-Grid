@@ -1,5 +1,6 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface Props {
   direction: string,
@@ -8,34 +9,27 @@ interface Props {
 
 export const ButtonMoveCharacterSelectionScreen = ({ direction, onPress }: Props) => {
   return (
-    <TouchableOpacity onPress={onPress}>
-      <View style={[
-        styles.container,
-        (direction === 'left') ?
-          {
-            borderLeftWidth: 0,
-            borderRightWidth: 40
-          } :
-          {
-            borderLeftWidth: 40,
-            borderRightWidth: 0
-          }]} />
+    <TouchableOpacity
+      style={styles.button}
+      onPress={onPress}
+      accessibilityRole="button"
+      accessibilityLabel={direction === 'left' ? 'Previous Pokémon' : 'Next Pokémon'}
+    >
+      <Icon name={direction === 'left' ? 'chevron-back' : 'chevron-forward'} size={28} color="white" />
     </TouchableOpacity>
   )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    width: 40,
-    height: 40,
-    borderColor: 'white',
-    borderWidth: 0,
-    borderTopWidth: 20,
-    borderTopColor: 'transparent',
-    borderBottomWidth: 20,
-    borderBottomColor: 'transparent',
-    borderLeftColor: 'transparent',
-    borderRightColor: 'transparent'
+  button: {
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.08)',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.14)',
   }
 })
 
