@@ -26,9 +26,7 @@ but the cells next to them show a warning, as in *Hunt the Wumpus*. Catch all si
 - Game logic isolated in custom hooks (`useBoardLogicGameScreen`, `usePokemon`, `usePokemonSelector`).
 - Stack navigation and fade-in image animations.
 
-## Screenshots
-
-<p align="center"><img src="docs/screens.png" alt="Home, character selection and the board in portrait" width="820"></p>
+## Landscape mode
 
 <p align="center"><img src="docs/gameplay.png" alt="Gameplay in landscape" width="820"></p>
 
