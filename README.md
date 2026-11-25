@@ -10,7 +10,9 @@ landscape.
 
 **[⬇ Download the Android APK](https://github.com/CuencaOscar/Pokemon-s-Grid/releases/latest)** (v1.1.0)
 
-<p align="center"><img src="docs/demo.gif" alt="Choosing a Pokémon, moving across the hidden grid, catching an Ash and hitting Game Over" width="340"></p>
+<p align="center"><img src="docs/demo-v1.1.gif" alt="Choosing a Pokémon and moving across the hidden grid" width="340"></p>
+
+<p align="center"><img src="docs/screens-v1.1.png" alt="Home, character selection and the board in portrait" width="820"></p>
 
 ## How to play
 
@@ -28,7 +30,7 @@ but the cells next to them show a warning, as in *Hunt the Wumpus*. Catch all si
 
 ## Landscape mode
 
-<p align="center"><img src="docs/gameplay.png" alt="Gameplay in landscape" width="820"></p>
+<p align="center"><img src="docs/gameplay-v1.1.png" alt="Gameplay in landscape" width="820"></p>
 
 ## Getting started
 
